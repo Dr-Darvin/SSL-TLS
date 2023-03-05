@@ -1,0 +1,16 @@
+SSL (Secure Socket Layer) is a protocol used to secure the connection between 2 entities.
+TLS(Transport Layer security) is a more secured version of SSL.
+both are used interchangeably to refer the same thing
+this protocol does 2 functions
+  1.Encrypts the communication
+  2.Verify the remote user's identity
+  
+ How HTTPS works using TLS
+  1.First TCP handshake occurs(TCP SYN,TCP SYN+ACK,TCP ACK)
+  2.Client send the hello message with its supported TLS versions and cyphers
+  3.Server sends its certificate which includes its identiy and public key
+  4.client encypts its symmetric session key using server's public key and send it
+  5.server decrypts the session key using it's private key
+  6.Finally data tranferring happens between 2 entities securly 
+  
+ 
